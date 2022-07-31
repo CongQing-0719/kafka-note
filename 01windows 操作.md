@@ -1,3 +1,8 @@
+查看topic
+```cmd
+bin\windows\kafka-topics.bat --bootstrap-server localhost:9091 --list
+```
+
 测试Consumer性能
 ```cmd
 bin\windows\kafka-consumer-perf-test.bat --bootstrap-server localhost:9091,localhost:9092,localhost:9093 --topic hello-kafka --messages 1000000 --consumer.config config\consumer.properties
